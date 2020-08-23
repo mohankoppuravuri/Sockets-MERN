@@ -37,6 +37,16 @@ const Table = (props) => {
 		setMessage (event.target.value);
 	}
 
+	const groupFilter = () => {
+		let group  = users.filter ( user => { return (user.group !== currentUser.group) })
+			.map (user => user.group)
+		group = [...new Set(group)];
+
+		return group.map ( (group,i) => { 
+			return <MenuItem key = {i} value = {group}>{group}</MenuItem>
+		})
+	};
+
 	return (
 		<Grid className = {css + 'messageContainer'}>
 			<Grid className = {css + "messageTitle"} >
@@ -58,10 +68,7 @@ const Table = (props) => {
 							value={group}
 							onChange={ (value) => {setGroup (value.target.value)}}
 						>
-							{ users.filter ( user => { return (user.group !== currentUser.group) })
-									.map ( (user,i) => { return (<MenuItem key = {i} value = {user.group}>{user.group}</MenuItem> )}
-									)
-							}
+						{groupFilter()}
 						</Select>
 					</FormControl>
 					{ group ?

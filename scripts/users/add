@@ -1,0 +1,55 @@
+#!/usr/bin/env node
+require('app-module-path').addPath(__dirname + '/../../');
+
+const minimist   = require ('minimist');
+const colors     = require ('colors');
+const model      = require ('models/users');
+
+const args       = minimist (process.argv.slice(2));
+
+function usage () {
+	/* eslint no-console : off */
+	console.log (`Usage : ${colors.red(process.argv[1].replace(/^.*\//g, ''))} options`);
+	console.log ();
+	console.log ( '      --id           (MANDATORY) : userid ');
+	console.log ( '      --password     (MANDATORY) : password of the user');
+	console.log ( '      --group       (MANDATORY)  : normal or officer');
+	console.log ();
+
+	process.exit (1);
+}
+
+if (!args.id) 
+	usage ();
+
+async function create () {
+	let data = {
+		id        : args.id,
+		password  : args.password,
+		group     : args.group,
+	};
+	let res  = await model.create (data);
+
+	return res;
+}
+
+const mongoose  = require ('common/db');
+const mongo_url      = 'mongodb://localhost:27017/rsocket?maxPoolSize=10';
+
+async function init () {
+	try {
+		/* Making connection with mongodb */
+		await mongoose.init (mongo_url);
+
+		let res = await create ();
+
+		console.log ('user create ok');
+		process.exit (0);
+	}
+	catch (err) {
+		console.log ({ err : err }, 'user create failed');
+		process.exit (1);
+	}
+}
+
+init ();

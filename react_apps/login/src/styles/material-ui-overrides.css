@@ -1,0 +1,60 @@
+.MuiFormLabel-root.Mui-focused {
+	color : var(--white);
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+	border-color : var(--color-2);
+}
+
+.MuiOutlinedInput-notchedOutline {
+	border-color : var(--white);
+}
+
+.MuiInputLabel-outlined {
+	font-family : var(--primary-font-light);
+    font-size   : 16px;
+	color       : var(--color-2-medium-light);
+}
+
+.MuiFormLabel-root.Mui-focused {
+	font-family : var(--primary-font-regular);
+}
+
+/* Contained Primary button */
+.MuiButton-containedPrimary {
+	background    : var(--white);
+    border        : 1px solid var(--color-2);
+	font-family   : var(--primary-font-medium);
+	text-transform: none;
+	padding-top   : 6px;
+	color         : var(--color-2);
+}
+
+.MuiButton-containedPrimary:hover {
+	background    : var(--color-1);
+    border        : 1px solid var(--white);
+	color         : var(--white);
+	font-family   : var(--primary-font-medium);
+	text-transform: none;
+	padding-top   : 6px;
+}
+
+.MuiButton-contained.Mui-disabled {
+	color            : var(--color-2-medium-light);
+    background-color : var(--color-2-very-light);
+}
+
+.Mui-disabled {
+	border : 0px;
+}
+
+/*textfield*/
+.MuiInputLabel-root.Mui-focused {
+	color : var(--white);
+}
+
+/* Text fields */
+.MuiInputBase-root {
+	font-family : var(--primary-font-regular);
+	color       : var(--white)
+}

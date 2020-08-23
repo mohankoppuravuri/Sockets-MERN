@@ -1,0 +1,16 @@
+.navbar-username{
+	display       : inline-block;
+	padding-top   : 20px;
+	color         : white;
+}
+
+.navbar-btn-logout{
+	cursor          : pointer;
+	padding-top     : 4px;
+	width           : 50px;
+	color           : white;
+}
+
+.navbar-body {
+	background-color : var(--color-1);
+}

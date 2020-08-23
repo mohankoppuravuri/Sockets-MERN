@@ -1,0 +1,43 @@
+.forms-notification {
+	background : white;
+}
+.forms-notification-row {
+	border-bottom-style : groove;
+}
+.forms-messageContainer {
+	margin  : 10px;
+}
+.forms-messageTitle {
+	margin         : 0 0 10px 0;
+}
+.forms-message {
+}
+.forms-messageFooter {
+	margin-top : 10px;
+}
+.forms-message-submittedBy {
+	margin-right : 5px;
+}
+.forms-message-group {
+	margin-right : 5px;
+}
+.forms-messageSend {
+
+}
+
+.forms-pendingContainer {
+	border-style   : groove;
+	border-width   : 0 2px 0 2px;
+	border-radius  : 5px;
+}
+.forms-pendingHeader {
+	background-color : var(--color-1);
+	padding          : 15px 25px 15px 25px;
+	border-radius    : 5px 5px 0 0;
+}
+.forms-pendingRow {
+	border-bottom-style : groove;
+}
+.forms-pendingCell {
+	padding    : 10px;
+}

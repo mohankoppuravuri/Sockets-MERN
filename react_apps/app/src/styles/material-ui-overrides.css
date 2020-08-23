@@ -1,0 +1,24 @@
+.MuiTab-root {
+	font-family: var(--primary-font-bold);
+}
+
+.MuiTabs-flexContainer {
+	justify-content : center;
+}
+
+.MuiAppBar-root {
+	border-radius  : 4px;
+}
+
+.MuiAppBar-colorPrimary {
+	color            : var(--color-1);
+	background-color : var(--color-white);
+}
+
+.MuiTabs-indicator {
+	background-color  : var(--color-2);
+}
+
+.MuiSelect-select.MuiSelect-select {
+    padding-right: 108px;
+}

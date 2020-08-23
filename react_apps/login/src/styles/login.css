@@ -1,0 +1,56 @@
+.login-root {
+	padding : 50px;
+}
+
+.login-root-container {
+	height: 100vh;
+    background: #D3DFB8;
+	padding-bottom: 10px;
+}
+
+.login-form-container {
+	position: absolute;
+    left    : 25%;
+	right   : 25%;
+	top     : 25%;
+	bottom  : 25%;
+}
+
+.login-form {
+    border-radius: 10px;
+    background: var(--color-1);
+    padding: 20px;
+	margin-top: 50px;
+}
+
+.login-heading-text {
+	font-size      : 22px;
+	color          : var(--white);
+}
+.login-heading-text-top {
+	font-size   : 38px;
+	color       : var(--white);
+}
+
+.login-heading-text-bottom {
+	margin-top  : -40px;
+	margin-left : 4px;
+	font-size   : 18px;
+	color       : var(--color-2-medium-light);
+}
+
+.login-btn-area {
+	margin-top : 14px;
+	float      : right;
+}
+
+.login-btn-submit {
+	margin-right : 25px;
+}
+
+.login-invalid-text {
+	color          : red;
+	letter-spacing : 1px;
+	margin-top     : -2px;
+	text-align     : center ;
+}

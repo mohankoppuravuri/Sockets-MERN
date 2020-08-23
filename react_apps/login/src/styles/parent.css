@@ -1,0 +1,14 @@
+body {
+	margin        : 0px;
+	padding       : 0px;
+	background    : #D3DFB8;
+	font-family   : Cello Sans Regular;
+	--white : #ffffff;
+
+	--color-1   : #574d68;
+	--color-2   : #A38560;
+	--primary-font-light   : Cello Sans Light;
+	--primary-font-regular : Cello Sans Regular;
+	--primary-font-medium  : Cello Sans Medium;
+	--primary-font-bold    : Cello Sans Bold;
+}

@@ -1,0 +1,55 @@
+@font-face {
+	font-family: 'Cello Sans Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Cello Sans Regular'), url('hinted-CelloSans-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Cello Sans Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Cello Sans Italic'), url('hinted-CelloSans-Italic.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Cello Sans Light';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Cello Sans Light'), url('hinted-CelloSans-Light.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Cello Sans Light Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Cello Sans Light Italic'), url('hinted-CelloSans-LightItalic.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Cello Sans Medium';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Cello Sans Medium'), url('hinted-CelloSans-Medium.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Cello Sans Medium Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Cello Sans Medium Italic'), url('hinted-CelloSans-MediumItalic.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Cello Sans Bold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Cello Sans Bold'), url('hinted-CelloSans-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Cello Sans Bold Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Cello Sans Bold Italic'), url('hinted-CelloSans-BoldItalic.woff') format('woff');
+}
